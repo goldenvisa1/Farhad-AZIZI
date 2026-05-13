@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&family=Inter:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-farsi: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-gold-50: #fbf7ef;
+  --color-gold-100: #f5eedc;
+  --color-gold-200: #ebdbb5;
+  --color-gold-300: #dbbf81;
+  --color-gold-400: #c9a054;
+  --color-gold-500: #b8863b;
+  --color-gold-600: #a16b30;
+  --color-gold-700: #865328;
+  --color-gold-800: #6f4425;
+  --color-gold-900: #5d3921;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FCFAF7] text-zinc-900 selection:bg-gold-500/30;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-bold text-zinc-900;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-200 via-gold-400 to-gold-600;
+}
+
+.border-luxury {
+  @apply border border-gold-500/20 bg-white/5 backdrop-blur-md;
+}
+
+.glass-morphism {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}

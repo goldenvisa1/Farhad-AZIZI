@@ -1,0 +1,8 @@
+{
+  "name": "Remix: یورونوبلز - اقامت اروپا",
+  "description": "تخصصی‌ترین مرکز مشاوره و اخذ اقامت اروپا. یورونوبل، تجربه‌ای متفاوت در مهاجرت.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

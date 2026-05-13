@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EURO NOBEL - Elementor Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        :root {
+            --gold-500: #D4AF37;
+            --gold-600: #B8860B;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #FCFAF7;
+        }
+
+        .text-gold-500 { color: var(--gold-500); }
+        .bg-gold-500 { background-color: var(--gold-500); }
+        .text-gold-600 { color: var(--gold-600); }
+        .border-gold-500 { border-color: var(--gold-500); }
+        
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FDFCF0',
+                            100: '#FAF7D6',
+                            500: '#D4AF37',
+                            600: '#B8860B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-zinc-100 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-gold-500/20">
+                    <i data-lucide="award" class="text-black w-6 h-6"></i>
+                </div>
+                <span class="text-2xl font-black tracking-tighter text-zinc-900 uppercase">EURO <span class="text-gold-600">NOBEL</span></span>
+            </a>
+            <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide">
+                <a href="#خدمات" class="hover:text-gold-600 transition-colors">خدمات</a>
+                <a href="#داستان‌ها" class="hover:text-gold-600 transition-colors">داستان‌های موفقیت</a>
+                <a href="#تماس" class="bg-zinc-900 text-white px-6 py-3 rounded-full hover:bg-gold-500 hover:text-black transition-all">مشاوره رایگان</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#FCFAF7]">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="text-right">
+                <span class="inline-block px-4 py-2 bg-gold-500/10 text-gold-600 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Expert Migration Services</span>
+                <h1 class="text-6xl md:text-8xl font-black text-zinc-900 leading-[1.1] mb-8 tracking-tighter">
+                    آینده شما در <br/> <span class="text-gold-600">قلب اروپا</span>
+                </h1>
+                <p class="text-zinc-600 text-xl md:text-2xl font-medium leading-relaxed mb-12 max-w-xl">
+                    مشاوره تخصصی مهاجرت، اقامت و سرمایه‌گذاری در برترین کشورهای اروپایی با تیمی مجرب در مادرید، پاریس و لیسبون.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#تماس" class="px-10 py-6 bg-zinc-900 text-white rounded-2xl font-black text-lg hover:bg-gold-500 hover:text-black transition-all shadow-2xl shadow-zinc-900/20 text-center">
+                        شروع فرآیند مهاجرت
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1467226632440-65f0b4957563?q=80&w=1200&auto=format&fit=crop" class="rounded-[3rem] shadow-2xl skew-y-3" alt="Europe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="داستان‌ها" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 text-zinc-900">داستان‌های موفقیت</h2>
+                <div class="h-1.5 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Case Study Card -->
+                <div class="bg-[#FCFAF7] border border-zinc-100 rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Case Study">
+                    <div class="p-8">
+                        <h4 class="text-xl font-black mb-4">خانواده ۴ نفره</h4>
+                        <p class="text-zinc-600 text-sm mb-4 italic">چالش: ابهام در منشأ دارایی‌ها</p>
+                        <p class="text-green-600 font-bold">نتیجه: صدور ویزا در ۵۵ روز</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+             <div class="flex items-center justify-center gap-3 mb-8">
+                <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
+                    <i data-lucide="award" class="text-black w-6 h-6"></i>
+                </div>
+                <span class="text-2xl font-black text-white">EURO <span class="text-gold-500">NOBEL</span></span>
+            </div>
+            <p class="text-zinc-400 mb-8">تمامی حقوق برای یورو نوبل محفوظ است © 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
